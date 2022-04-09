@@ -62,7 +62,7 @@ public class FeignConfig {
     @Value("${feign.custom.retry-max-attempts:3}")
     private int retryMaxAttempts;
 
-    @Value("${feign.excludes}")
+    @Value("${feign.excludes:''}")
     private String excludesPath;
 
     @Bean
